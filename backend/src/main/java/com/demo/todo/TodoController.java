@@ -15,8 +15,9 @@ public class TodoController {
   public TodoController(TodoRepository taskService) {
     this.todoRepository = taskService;
   }
+  
 
-  @GetMapping(value = {"", "/todos"})
+  @GetMapping( "/todos")
   public Iterable<Todo> list(HttpServletResponse response) {
     return todoRepository.findAll();
   }

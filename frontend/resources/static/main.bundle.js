@@ -188,7 +188,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var HOST = 'http://localhost:4200';
+var HOST = 'http://localhost:8080';
 var ENTITY = 'todos';
 var URL = HOST + '/' + ENTITY;
 var BackendService = (function () {

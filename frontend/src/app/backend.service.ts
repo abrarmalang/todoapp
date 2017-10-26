@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
 
-const HOST = 'http://localhost:4200';
+const HOST = 'http://localhost:8080';
 const ENTITY = 'todos';
 const URL = HOST + '/' + ENTITY;
 
