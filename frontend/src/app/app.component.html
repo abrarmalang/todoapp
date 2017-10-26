@@ -1,0 +1,15 @@
+
+<div class="container">
+    <section class="todo">
+      
+      <ul class="todo-list">
+          <li><input class="new-todo" placeholder="add todo" autofocus="" [(ngModel)]="newTodo.title" (keyup.enter)="addTodo()"></li>
+      </ul>
+      <ul *ngFor="let todo of todos" class="todo-list">
+          <li [class.done]="todo.complete">
+            <a class="toggle" (click)="toggleComplete(todo)">check</a>{{todo.title}}
+            <a class="icon-delete" (click)="removeTodo(todo)">Delete</a>
+          </li>
+      </ul>
+    </section>
+  </div>
